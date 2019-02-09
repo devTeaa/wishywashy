@@ -1,0 +1,47 @@
+{
+  "name": "wishywashy",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bulma": "^0.7.2",
+    "bulma-calendar": "^5.0.3",
+    "bulma-extensions": "^4.0.0",
+    "express": "^4.16.4",
+    "express-favicon": "^2.0.1",
+    "jquery": "^3.3.1",
+    "jspdf": "^1.4.1",
+    "jspdf-autotable": "^2.3.5",
+    "moment": "^2.22.2",
+    "numeral": "^2.0.6",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^5.1.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "serve": "^10.1.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
+    "node-sass": "^4.11.0"
+  }
+}
