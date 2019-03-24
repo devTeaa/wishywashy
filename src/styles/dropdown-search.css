@@ -1,0 +1,18 @@
+.dropdown-search {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #3273dc;
+}
+
+.dropdown-full {
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}

@@ -1,0 +1,123 @@
+.grid-home {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Base card */
+.grid-home > .card {
+  border-radius: 1.25rem;
+  display: flex;
+  min-height: 9rem;
+  overflow: hidden;
+  background-color: var(--dark);
+}
+
+.grid-home > .card > .card-content,
+.grid-home > .card > .card-footer {
+  flex: 1;
+  align-self: stretch;
+}
+
+.grid-home > .card > .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-home > .card > .card-footer {
+  flex-direction: column;
+}
+
+.grid-home > .card > .card-footer::after {
+  content: "";
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  left: -10%;
+  transform: skew(20deg);
+  z-index: 2;
+  transition: 0.2s left ease-in-out;
+}
+
+.grid-home > .card > .card-footer:hover::after {
+  left: 50%;
+}
+
+.grid-home > .card > .card-content,
+.grid-home > .card > .card-footer > .card-footer-item {
+  z-index: 3;
+}
+
+.grid-home > .card > .card-content > .title,
+.grid-home > .card > .card-footer > .card-footer-item > a {
+  color: var(--light);
+}
+
+.grid-home > .card-no-border > .card-footer,
+.grid-home > .card-no-border > .card-footer > .card-footer-item {
+  border: 0;
+  border-top: 0;
+  border-right: 0;
+}
+
+.grid-home > .card-no-border > .card-footer > .card-footer-item > a {
+  position: relative;
+}
+
+.grid-home > .card-no-border > .card-footer > .card-footer-item > a::after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  bottom: -3px;
+  left: -5%;
+  border-bottom: 2px solid var(--light);
+  transition: 0.2s width ease-in-out;
+}
+
+.grid-home > .card > .card-footer > .card-footer-item:hover > a::after {
+  width: 110%;
+}
+
+/* ========================================= */
+
+/* Card colours */
+.grid-home > .card-blue > .card-footer::after {
+  background-color: #3498db;
+}
+
+.grid-home > .card-yellow > .card-footer::after {
+  background-color: #f39c12;
+}
+
+.grid-home > .card-red > .card-footer::after {
+  background-color: #e74c3c;
+}
+
+.grid-home > .card-green > .card-footer::after {
+  background-color: #2ecc71;
+}
+
+.grid-home > .card-turqoise > .card-footer::after {
+  background-color: #2bcbba;
+}
+
+.grid-home > .card-violet > .card-footer::after {
+  background-color: #9b59b6;
+}
+
+/* ========================================= */
+
+/* Desktop */
+@media (max-width: 1024px) {
+  .grid-home {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Extra-small */
+@media (max-width: 600px) {
+  .grid-home {
+    grid-template-columns: 1fr;
+  }
+}

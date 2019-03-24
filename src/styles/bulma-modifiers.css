@@ -1,0 +1,23 @@
+.table.is-scrollable-y > tbody {
+  min-height: 200px;
+  max-height: 50vh;
+  overflow-y: auto;
+  width: auto;
+  position: absolute;
+}
+
+.table-row-bg-warning {
+  background-color: rgba(243, 156, 18, 0.7) !important;
+}
+
+.table-row-bg-danger {
+  background-color: rgba(231, 76, 60, 0.7) !important;
+}
+
+.table-row-bg-success {
+  background-color: rgba(46, 204, 113, 0.7) !important;
+}
+
+.input.is-narrow {
+  width: auto;
+}
