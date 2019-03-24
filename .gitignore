@@ -2,8 +2,6 @@
 
 # dev
 store.js
-/src/config.js
-/src/source.js
 
 # dependencies
 /node_modules
@@ -13,8 +11,11 @@ store.js
 # testing
 /coverage
 
-# production
-/build
+# production build
+src/*
+public/*
+build/static/css/*.map
+build/static/js/*.map
 
 # misc
 .DS_Store
